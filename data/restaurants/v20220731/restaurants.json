@@ -1,0 +1,93 @@
+[
+    {
+        "name": "Armitage Alehouse",
+        "country": "U.S.A.",
+        "state": "Illinois",
+        "city": "Chicago",
+        "neighborhood": "Lincoln Park",
+        "cuisine": "British Pub",
+        "price": "$$$$",
+        "mealTypes": ["breakfast", "lunch", "dinner", "dessert", "drinks"],
+        "reservationSite": "Resy",
+        "reservationLink": "https://resy.com/cities/chi/armitage-alehouse",
+        "labels": []
+    },
+    {
+        "name": "Trivoli Tavern",
+        "country": "U.S.A.",
+        "state": "Illinois",
+        "city": "Chicago",
+        "neighborhood": "Fulton Market",
+        "cuisine": "American",
+        "price": "$$$$",
+        "mealTypes": ["dinner", "dessert", "drinks"],
+        "reservationSite": "Resy",
+        "reservationLink": "https://resy.com/cities/chi/trivoli-tavern",
+        "labels": []
+    },
+    {
+        "name": "Au Cheval",
+        "country": "U.S.A.",
+        "state": "Illinois",
+        "city": "Chicago",
+        "neighborhood": "Fulton Market",
+        "cuisine": "American",
+        "price": "$$$",
+        "mealTypes": ["lunch", "dinner", "dessert", "drinks"],
+        "reservationSite": null,
+        "reservationLink": null,
+        "labels": []
+    },
+    {
+        "name": "RPM Italian",
+        "country": "U.S.A.",
+        "state": "Illinois",
+        "city": "Chicago",
+        "neighborhood": "River North",
+        "cuisine": "Italian",
+        "price": "$$$",
+        "mealTypes": ["dinner", "dessert", "drinks"],
+        "reservationSite": "Resy",
+        "reservationLink": "https://resy.com/cities/chi/rpm-italian-chicago",
+        "labels": []
+    },
+    {
+        "name": "RPM Steak",
+        "country": "U.S.A.",
+        "state": "Illinois",
+        "city": "Chicago",
+        "neighborhood": "River North",
+        "cuisine": "Steakhouse",
+        "price": "$$$$",
+        "mealTypes": ["dinner", "dessert", "drinks"],
+        "reservationSite": "Tock",
+        "reservationLink": "https://www.exploretock.com/rpmsteak",
+        "labels": []
+    },
+    {
+        "name": "RPM Seafood",
+        "country": "U.S.A.",
+        "state": "Illinois",
+        "city": "Chicago",
+        "neighborhood": "River North",
+        "cuisine": "Seafood",
+        "price": "$$$$",
+        "mealTypes": ["dinner", "dessert", "drinks"],
+        "reservationSite": "Tock",
+        "reservationLink": "https://www.exploretock.com/rpmseafood",
+        "labels": []
+    },
+    {
+        "name": "Gibsons Italia",
+        "country": "U.S.A.",
+        "state": "Illinois",
+        "city": "Chicago",
+        "neighborhood": "West Loop",
+        "cuisine": "Italian",
+        "price": "$$$$",
+        "mealTypes": ["lunch", "dinner", "dessert", "drinks"],
+        "reservationSite": "OpenTable",
+        "reservationLink": "https://www.opentable.com/r/gibsons-italia-chicago",
+        "labels": []
+    }
+]

@@ -3,7 +3,7 @@
     "version": "0.0.0",
     "scripts": {
         "build": "vite build",
-        "dev": "vite",
+        "dev": "vite --host 0.0.0.0",
         "fmt": "prettier --write .",
         "fmt:check": "prettier --check .",
         "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs,.ts,.tsx,.cts,.mts --fix --ignore-path .gitignore",
@@ -12,6 +12,10 @@
         "type-check": "vue-tsc --noEmit -p tsconfig.vitest.json --composite false"
     },
     "dependencies": {
+        "axios": "^0.27.2",
+        "bootstrap": "^4.6.0",
+        "jquery": "^3.6.0",
+        "pinia": "^2.0.16",
         "vue": "^3.2.37"
     },
     "devDependencies": {
