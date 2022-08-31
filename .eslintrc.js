@@ -15,8 +15,27 @@ module.exports = {
             rules: {
                 // With VueJS Composition API, props is assigned in <script setup> but appears to not be used
                 "@typescript-eslint/no-unused-vars": "off",
+                // Allow unused variables with "_" prefix
+                "vue/no-unused-vars": [
+                    "error",
+                    {
+                        ignorePattern: "^_",
+                    },
+                ],
                 // Should not require a :key for every v-for loop
                 "vue/require-v-for-key": "warn",
+            },
+        },
+        {
+            files: ["*.ts"],
+            rules: {
+                // Allow underscore parameters (args) to be unused
+                "@typescript-eslint/no-unused-vars": [
+                    "error",
+                    {
+                        argsIgnorePattern: "_+[^\\s]*",
+                    },
+                ],
             },
         },
     ],
