@@ -19,12 +19,16 @@ function updateMealTypeFilter(event: Event) {
     const mealType = MealType[eventTarget.value as keyof typeof MealType];
     const enable = eventTarget.checked;
 
-    if (enable) {
-        filterStore.addMealType(mealType);
-        console.debug(`Added meal type filter ${mealType}`);
+    if (mealType) {
+        if (enable) {
+            filterStore.addMealType(mealType);
+            console.debug(`Added meal type filter ${mealType}`);
+        } else {
+            filterStore.deleteMealType(mealType);
+            console.debug(`Removed meal type filter ${mealType}`);
+        }
     } else {
-        filterStore.deleteMealType(mealType);
-        console.debug(`Removed meal type filter ${mealType}`);
+        console.warn(`Invalid key '${eventTarget.value}' for meal type filter from element with ID ${eventTarget.id}`);
     }
 }
 </script>
@@ -36,7 +40,7 @@ function updateMealTypeFilter(event: Event) {
         <input
             class="form-check-input"
             type="checkbox"
-            :value="variantValue"
+            :value="variantName"
             :id="`${variantValue}MealTypeInput`"
             @change.self="updateMealTypeFilter"
         />

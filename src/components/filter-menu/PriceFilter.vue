@@ -43,7 +43,7 @@ function updatePriceFilter(event: Event): void {
             <template v-for="(variantValue, variantName) in DollarSigns" :key="variantName.toLowerCase()">
                 <label class="btn btn-outline-secondary" style="min-width: 25%">
                     <input
-                        :id="variantName.toLowerCase()"
+                        :id="`${variantName.toLowerCase()}DollarSignsInput`"
                         type="checkbox"
                         name="price"
                         :value="variantName"
