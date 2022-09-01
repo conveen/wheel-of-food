@@ -196,7 +196,7 @@ export const useFilterStore = defineStore("filter", {
 
                     return false;
                 });
-                console.debug("Location filter datasets are now: ", this.locationFilterDatasets);
+                console.debug(`${this.filteredRestaurants.length} restaurants meet the filter criteria`);
             }
         },
 

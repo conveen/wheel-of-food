@@ -2,6 +2,7 @@
 import axios from "axios";
 import { onMounted } from "vue";
 
+import FilterMenu from "@/components/filter-menu/FilterMenu.vue";
 import FilterMenuToggle from "@/components/filter-menu/FilterMenuToggle.vue";
 import { useFilterStore } from "@/stores/filterStore";
 
@@ -37,7 +38,9 @@ onMounted(() => {
             <FilterMenuToggle :filter-menu-id="filterMenuId" :show-filter-menu="isLargeDevice()" />
         </div>
     </div>
-    <div class="row"></div>
+    <div class="row">
+        <FilterMenu :filter-menu-id="filterMenuId" :show-filter-menu="isLargeDevice()" />
+    </div>
 
     <div class="row">
         <div class="col"></div>
