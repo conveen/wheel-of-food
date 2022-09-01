@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import MealTypeFilter from "@/components/filter-menu/MealTypeFilter.vue";
 import PriceFilter from "@/components/filter-menu/PriceFilter.vue";
 
 interface FilterMenuProps {
@@ -17,6 +18,12 @@ const filterClass = "col-xs-12 col-sm-6 col-lg-12 pl-0 pr-0";
 
 <template>
     <div :id="filterMenuId" :class="menuClass">
+        <div class="form-group">
+            <div :class="filterClass">
+                <MealTypeFilter />
+            </div>
+        </div>
+        <hr />
         <div class="form-group">
             <div :class="filterClass">
                 <PriceFilter />
